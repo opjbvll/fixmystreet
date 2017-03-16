@@ -801,6 +801,9 @@ OpenLayers.Strategy.FixMyStreetFixed = OpenLayers.Class(OpenLayers.Strategy.Fixe
 // params to /ajax if the user has filtered the map.
 OpenLayers.Protocol.FixMyStreet = OpenLayers.Class(OpenLayers.Protocol.HTTP, {
     read: function(options) {
+        // Show the loading indicator over the map
+        $('#loading-indicator').removeClass('hidden');
+        $('#loading-indicator').attr('aria-hidden', false);
         // Pass the values of the category, status, and sort fields as query params
         $.each({ filter_category: 'filter_categories', status: 'statuses', sort: 'sort' }, function(key, id) {
             var val = $('#' + id).val();
@@ -844,6 +847,9 @@ OpenLayers.Format.FixMyStreet = OpenLayers.Class(OpenLayers.Format.JSON, {
         if (typeof(obj.pagination) != 'undefined') {
             $('.js-pagination').html(obj.pagination);
         }
+        // Remove loading indicator
+        $('#loading-indicator').addClass('hidden');
+        $('#loading-indicator').attr('aria-hidden', true);
         return fixmystreet.maps.markers_list( obj.pins, false );
     },
     CLASS_NAME: "OpenLayers.Format.FixMyStreet"
