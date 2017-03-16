@@ -1748,17 +1748,17 @@ msgstr "Señale en el mapa de la zona la localización del problema"
 #: templates/web/base/report/new/form_user_loggedout.html:6
 #: templates/web/base/report/update/form_user_loggedout.html:7
 msgid "Log in with Facebook"
-msgstr ""
+msgstr "Iniciar sesión con Facebook"
 
 #: templates/web/base/auth/general.html:30
 #: templates/web/base/report/new/form_user_loggedout.html:14
 #: templates/web/base/report/update/form_user_loggedout.html:15
 msgid "Log in with Twitter"
-msgstr ""
+msgstr "Iniciar sesión con Twitter"
 
 #: templates/web/base/js/translation_strings.html:56
 msgid "Log in with email"
-msgstr ""
+msgstr "Iniciar sesión con email"
 
 #: templates/web/base/js/translation_strings.html:44
 msgid "MAP"
