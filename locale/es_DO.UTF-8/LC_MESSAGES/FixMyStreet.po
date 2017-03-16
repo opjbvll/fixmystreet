@@ -578,7 +578,7 @@ msgid ""
 "Check <strong>confirmed</strong> to indicate that this contact has been confirmed as correct.\n"
 "                If you are not sure of the origin or validity of the contact, leave this unchecked."
 msgstr ""
-"Marcar <strong>confirmado</ strong> para indicar que este contacto se ha confirmado como correcto.\n"
+"Marcar <strong>confirmado</strong> para indicar que este contacto se ha confirmado como correcto.\n"
 "Si no está seguro del origen o la validez del contacto, deje esta casilla sin marcar."
 
 #: templates/web/base/admin/contact-form.html:52
@@ -586,7 +586,7 @@ msgid ""
 "Check <strong>deleted</strong> to remove the category from use. \n"
 "        It will not appear as an available category in the drop-down menu on the report-a-problem page."
 msgstr ""
-"Marcar <strong>borrado</ strong> para dejar de usar la categoría. \n"
+"Marcar <strong>borrado</strong> para dejar de usar la categoría. \n"
 "Dejará de aparecer en el menú desplegable que se muestra al notificar los problemas."
 
 #: templates/web/base/admin/contact-form.html:79
@@ -1103,7 +1103,7 @@ msgid ""
 "          different endpoint (and send method) from the body's. For example, if reports for some categories of\n"
 "          problem must be emailed, while others can be sent over Open311."
 msgstr ""
-"Activar <strong>puede ser transferido</ strong> para establecer si uno o más contactos del órgano administrativo\n"
+"Activar <strong>puede ser transferido</strong> para establecer si uno o más contactos del órgano administrativo\n"
 "tienen diferentes vías para recibir (y enviar) actualizaciones. Por ejemplo, si los informes para algunas categorías de \n"
 "incidencia deben ser enviadas por correo electrónico, mientras que otros pueden ser enviados a través Open311."
 
@@ -1231,7 +1231,7 @@ msgstr "Primera vez"
 
 #: templates/web/base/admin/body.html:52
 msgid "Fix this by choosing an <strong>area covered</strong> in the <em>Edit body details</em> form below."
-msgstr "Arreglar esto eligiendo un <strong>área cubierta</ strong> en el formulario <em>Editar detalles del organismo</ em> a continuación."
+msgstr "Arreglar esto eligiendo un <strong>área cubierta</strong> en el formulario <em>Editar detalles del organismo</em> a continuación."
 
 #: templates/web/base/admin/report_blocks.html:1
 #: templates/web/base/admin/report_blocks.html:11
@@ -1479,7 +1479,7 @@ msgid ""
 "Identify a <strong>parent</strong> if this body is itself part of another body.\n"
 "          For basic installations, you don't need to join bodies in this way."
 msgstr ""
-"Identificar una <strong>sub-organismos</ strong> si este organismo forma parte de otro organismo.\n"
+"Identificar una <strong>sub-organismos</strong> si este organismo forma parte de otro organismo.\n"
 "Para las instalaciones básicas, no necesita asociar los organismos de esta manera."
 
 #: templates/web/base/admin/responsepriorities/edit.html:23
@@ -1525,7 +1525,7 @@ msgstr ""
 
 #: templates/web/base/admin/contact-form.html:30
 msgid "If you're using <strong>a send method that is not email</strong>, enter the service ID (Open311) or equivalent identifier here."
-msgstr "Si utiliza <strong> un método de envío distinto del email</ strong>, introduzca el ID de servicio (Open311) o identificador equivalente aquí."
+msgstr "Si utiliza <strong> un método de envío distinto del email</strong>, introduzca el ID de servicio (Open311) o identificador equivalente aquí."
 
 #: templates/web/base/admin/open311-form-fields.html:100
 #: templates/web/base/admin/open311-form-fields.html:101
@@ -1535,7 +1535,7 @@ msgid ""
 "          Check that your cobrand supports this feature before switching it on."
 msgstr ""
 "Si ha habilitado \"Open311 envío de actualizaciones\", tenga en cuenta que Open311 normalmente sólo acepta el estado ABIERTO o CERRADO en\n"
-"sus actualizaciones. Active <strong>Open311 extensión de status</ strong> si desea permitir que los estados adicionales sean también transferidos.\n"
+"sus actualizaciones. Active <strong>Open311 extensión de status</strong> si desea permitir que los estados adicionales sean también transferidos.\n"
 "Compruebe que su cobrand admite esta función antes de activarlo."
 
 #: templates/web/base/admin/open311-form-fields.html:87
@@ -1545,7 +1545,7 @@ msgid ""
 "          if you do <strong>not</strong> want that user to be notified whenever these updates are created."
 msgstr ""
 "Si ha habilitado \"Open311 envío de actualizaciones\", active <strong>suprimir alertas</strong>\n"
-"si <strong>NO</ strong> deseas que el usuario sea notificado cada vez que se cree uno de estos updates."
+"si <strong>NO</strong> deseas que el usuario sea notificado cada vez que se cree uno de estos updates."
 
 #: templates/web/base/admin/open311-form-fields.html:70
 #: templates/web/base/admin/open311-form-fields.html:71
@@ -1555,7 +1555,7 @@ msgid ""
 "          when they are shown on the site. Enter the ID (number) of that user."
 msgstr ""
 "Si ha habilitado \"Open311 envío de actualizaciones\", debe identificar qué \n"
-"<strong>usuario</ strong> de FixMyStreet aparece como creador de dichas actualizaciones\n"
+"<strong>usuario</strong> de FixMyStreet aparece como creador de dichas actualizaciones\n"
 "en esta web. Introduzca el ID (número) del usuario."
 
 #: perllib/FixMyStreet/App/Controller/Contact.pm:133
@@ -2059,7 +2059,7 @@ msgid ""
 "No specific areas are currently available, because the <code>MAPIT_URL</code> in\n"
 "            your config file is not pointing to a live MapIt service."
 msgstr ""
-"No hay áreas específicas disponibles en la actualidad, debido a que el <code>MAPIT_URL</ code> en\n"
+"No hay áreas específicas disponibles en la actualidad, debido a que el <code>MAPIT_URL</code> en\n"
 "su archivo de configuración no está apuntando a un servicio MapIt activo."
 
 #: templates/web/base/report/_support.html:2
@@ -2090,7 +2090,7 @@ msgid ""
 "                Depending on the implementation, staff users may have access to the dashboard (summary of\n"
 "                activity across their body), the ability to hide reports or set special report statuses."
 msgstr ""
-"Normalmente los usuarios (públicos) no deben estar asociados con ningún <strong>organismo</ strong>. <br>\n"
+"Normalmente los usuarios (públicos) no deben estar asociados con ningún <strong>organismo</strong>. <br>\n"
 "El personal autorizado puede ser asociado al organismo administrativo que representan. <br>\n"
 "Dependiendo de la implementación, el personal pueden tener acceso al tablero (resumen de\n"
 "la actividad a través de su departamento), la capacidad de ocultar notificaciones, o establecer estados especiales para las notificaciones."
@@ -3278,7 +3278,7 @@ msgid ""
 "Some endpoints require an <strong>API key</strong> to indicate that the reports are being\n"
 "          sent from your FixMyStreet installation."
 msgstr ""
-"Algunos puntos finales requieren una clave de <strong>API</ strong> para indicar que las notificaciones provienen\n"
+"Algunos puntos finales requieren una clave de <strong>API</strong> para indicar que las notificaciones provienen\n"
 "de tu sistema FixMyStreet."
 
 #: templates/web/base/alert/index.html:40
@@ -3704,7 +3704,7 @@ msgid ""
 "The user's <strong>name</strong> is displayed publicly on reports that have not been marked <em>anonymous</em>.\n"
 "                Names are not necessarily unique."
 msgstr ""
-"El usuario <strong>name</ strong> aparece públicamente en los informes que no han sido marcados como <em>anónimos</em>.\n"
+"El usuario <strong>name</strong> aparece públicamente en los informes que no han sido marcados como <em>anónimos</em>.\n"
 "Los nombres no son necesariamente únicos."
 
 #: templates/web/base/around/on_map_list_items.html:12
@@ -3755,7 +3755,7 @@ msgid ""
 "           "
 msgstr ""
 "Estos ajustes son para los organismos que utilizan Open311 (u otra integración back-end) para recibir las incidencias.<br>\n"
-"<Strong>Usted no tiene necesidad de hacerlo si el Método de Envío es por correo electrónico.</ Strong>.\n"
+"<strong>Usted no tiene necesidad de hacerlo si el Método de Envío es por correo electrónico.</strong>.\n"
 "Para obtener más información sobre Open311, consulte\n"
 "<a href='https://www.mysociety.org/2013/01/17/open311-explained/' class='admin-offsite-link'>este documento</a>."
 
@@ -3788,9 +3788,9 @@ msgid ""
 "            Consequently, none of its categories will appear in the drop-down category menu when users report problems.\n"
 "            Currently, users <strong>cannot report problems to this body</strong>."
 msgstr ""
-"Este organismo no cubre ninguna zona. Esto significa que no tiene jurisdicción sobre los problemas reportados <em>en ninguna ubicación</ em>. \n"
+"Este organismo no cubre ninguna zona. Esto significa que no tiene jurisdicción sobre los problemas reportados <em>en ninguna ubicación</em>. \n"
 "En consecuencia, ninguna de sus categorías aparecerá en el menú desplegable de categorías cuando los usuarios envíen incidencias.\n"
-"Actualmente, los usuarios <strong>no pueden informar de problemas a este organismo</ strong>."
+"Actualmente, los usuarios <strong>no pueden informar de problemas a este organismo</strong>."
 
 #: templates/web/base/admin/body.html:58
 msgid "This body has no contacts. This means that currently problems reported to this body <strong>will not be sent</strong>."
