@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: matthew@mysociety.org\n"
-"POT-Creation-Date: 2017-02-02 10:31+0000\n"
+"POT-Creation-Date: 2017-03-16 10:12-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Granit Zhubi <granitzhubi@gmail.com>, 2016\n"
 "Language-Team: Albanian (https://www.transifex.com/mysociety/teams/12067/sq/)\n"
@@ -18,8 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:648
-#: perllib/FixMyStreet/Script/Reports.pm:199
+#: perllib/FixMyStreet/DB/Result/Problem.pm:672
+#: perllib/FixMyStreet/Script/Reports.pm:197
 msgid " and "
 msgstr "dhe"
 
@@ -162,7 +162,7 @@ msgstr "(i rregulluar)"
 msgid "(like graffiti, fly tipping, broken paving slabs, or street lighting)"
 msgstr "(Si mbishkrime, pllaka të thyera , ose ndriçimit të rrugëve)"
 
-#: templates/web/base/report/_item.html:60
+#: templates/web/base/report/_item.html:68
 msgid "(not sent to council)"
 msgstr "(nuk ju dergua kuvendit)"
 
@@ -170,17 +170,17 @@ msgstr "(nuk ju dergua kuvendit)"
 msgid "(optional)"
 msgstr "(opsionale)"
 
-#: templates/web/base/report/_item.html:59
+#: templates/web/base/report/_item.html:67
 msgid "(sent to both)"
 msgstr "(dërguar te të dy)"
 
 #: perllib/FixMyStreet/App/Controller/Report/New.pm:239
 #: perllib/FixMyStreet/App/Controller/Report/New.pm:658
-#: perllib/FixMyStreet/DB/Result/Problem.pm:439
+#: perllib/FixMyStreet/DB/Result/Problem.pm:441
 msgid "-- Pick a category --"
 msgstr "-- Zgjedh në kategori --"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:445
+#: perllib/FixMyStreet/DB/Result/Problem.pm:447
 msgid "-- Pick a property type --"
 msgstr "-- Zgjedh nje lloj te karakteristikes --"
 
@@ -205,7 +205,7 @@ msgstr ""
 
 #. ('The first %s is a dropdown of all/fixed/etc, the second is a dropdown of categories')
 #. ("The first %s is a dropdown of all/fixed/etc, the second is a dropdown of categories")
-#: templates/web/base/reports/_list-filters.html:28
+#: templates/web/base/reports/_list-filters.html:32
 msgid "<label for=\"statuses\">Show</label> %s <label for=\"filter_categories\">about</label> %s"
 msgstr ""
 "Paraqit\n"
@@ -229,11 +229,11 @@ msgstr "<strong>Jo</strong> Me lejoni te konfirmoj perditesimin me email"
 msgid "<strong>No</strong> let me sign in by email"
 msgstr "<strong>Jo</strong> më lejo të kyqem me email"
 
-#: templates/web/base/report/_inspect.html:142
+#: templates/web/base/report/_inspect.html:155
 msgid "<strong>Note:</strong> This report has been sent onwards for action. Any changes made won't be passed on."
 msgstr "<Strong> Shënim: </ strong> Ky raport është dërguar tutje për veprim. Çdo ndryshim i bërë tutje nuk do të kalojë."
 
-#: templates/web/base/report/_inspect.html:144
+#: templates/web/base/report/_inspect.html:157
 msgid "<strong>Note:</strong> This report hasn't yet been sent onwards for action. Any changes made may not be passed on."
 msgstr "<Strong> Shënim: </ strong> Ky raport nuk është dërguar ende në vazhdim për veprim. Çdo ndryshim i bërë nuk mund të kalohet."
 
@@ -245,6 +245,8 @@ msgstr "<strong>Po</strong> Unë kam një fjalëkalim"
 
 #: templates/web/base/admin/report_blocks.html:1
 #: templates/web/base/admin/report_blocks.html:10
+#: templates/web/base/report/inspect/state_groups_select.html:1
+#: templates/web/base/report/inspect/state_groups_select.html:6
 #: templates/web/base/report/update/form_update.html:41
 #: templates/web/base/report/update/form_update.html:42
 msgid "Action Scheduled"
@@ -289,15 +291,15 @@ msgstr "Shto në listën e ngushtë"
 msgid "Add user"
 msgstr "Shto përdorues"
 
-#: perllib/FixMyStreet/Cobrand/Default.pm:731
+#: perllib/FixMyStreet/Cobrand/Default.pm:730
 msgid "Add/edit problem categories"
 msgstr "Shto/përditëso kategoritë e problemeve"
 
-#: perllib/FixMyStreet/Cobrand/Default.pm:733
+#: perllib/FixMyStreet/Cobrand/Default.pm:732
 msgid "Add/edit response priorities"
 msgstr "Shto/përditëso prioritetet e përgjigjeve"
 
-#: perllib/FixMyStreet/Cobrand/Default.pm:732
+#: perllib/FixMyStreet/Cobrand/Default.pm:731
 msgid "Add/edit response templates"
 msgstr "Shto/Përditëso përgjigjet nga template"
 
@@ -308,6 +310,10 @@ msgstr "Shtoi %s"
 #: templates/web/base/report/_main.html:145
 msgid "Adding this report to your shortlist will remove it from %s’s shortlist."
 msgstr "Duke shtuar këtë raport në listën tuaj do të heqni atë nga lista %s''s e ngushtë."
+
+#: templates/web/base/main_nav_items.html:47
+msgid "Admin"
+msgstr ""
 
 #: templates/web/base/auth/change_password.html:39
 msgid "Again:"
@@ -338,7 +344,13 @@ msgstr "Të gjitha raportet si CSV"
 msgid "All categories"
 msgstr "Të gjitha kategoritë"
 
-#: templates/web/base/footer.html:29
+#: templates/web/base/admin/exordefects/index.html:23
+#, fuzzy
+msgid "All inspectors"
+msgstr "Të gjitha kategoritë"
+
+#: templates/web/base/main_nav_items.html:0
+#: templates/web/base/main_nav_items.html:27
 #: templates/web/base/reports/_list-filters.html:2
 #: templates/web/zurich/admin/index-dm.html:12
 #: templates/web/zurich/admin/stats.html:13 templates/web/zurich/footer.html:21
@@ -415,7 +427,7 @@ msgstr "Caktoja një drejtorije të jashtme:"
 msgid "Assign to subdivision:"
 msgstr "Cakto per nenndarje:"
 
-#: perllib/FixMyStreet/Cobrand/Default.pm:728
+#: perllib/FixMyStreet/Cobrand/Default.pm:727
 msgid "Assign users to areas"
 msgstr "Cakto përdorues për ëonat"
 
@@ -449,7 +461,7 @@ msgstr "Kategoritë në dispozicion"
 msgid "Avoid personal information and vehicle number plates"
 msgstr "Shmangni të dhënat personale dhe targat e automjeteve"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:402
+#: perllib/FixMyStreet/DB/Result/Problem.pm:404
 #: templates/web/zurich/report/_item.html:9
 msgid "Awaiting moderation"
 msgstr "Në pritje të vlerësimit"
@@ -467,7 +479,7 @@ msgid "Ban email address"
 msgstr "bllokoemail adresen"
 
 #: perllib/FixMyStreet/Cobrand/Default.pm:650
-#: perllib/FixMyStreet/Cobrand/Default.pm:730
+#: perllib/FixMyStreet/Cobrand/Default.pm:729
 #: perllib/FixMyStreet/Cobrand/Zurich.pm:391
 #: templates/web/base/admin/bodies.html:1
 #: templates/web/base/admin/report_edit.html:55
@@ -511,7 +523,7 @@ msgstr "Kategoritë:"
 #: templates/web/base/admin/contact-form.html:19
 #: templates/web/base/admin/stats_fix_rate.html:4
 #: templates/web/base/report/_inspect.html:32
-#: templates/web/base/report/_item.html:82
+#: templates/web/base/report/_item.html:90
 #: templates/web/base/report/new/category.html:6
 #: templates/web/base/report/new/category_wrapper.html:3
 #: templates/web/zurich/admin/body.html:14
@@ -539,7 +551,7 @@ msgstr "Norma e rregullimit të kategorive për problemet > 4 javë"
 msgid "Category:"
 msgstr "Kategoria:"
 
-#: perllib/FixMyStreet/Script/Reports.pm:190
+#: perllib/FixMyStreet/Script/Reports.pm:188
 msgid "Category: %s"
 msgstr "Kategoria: %s"
 
@@ -608,10 +620,12 @@ msgstr ""
 "Zgjidhni një emër të<strong> kategorisë </ strong> emër që ka kuptim për publikun (p.sh., \"\", \"ndriçimi publik\",\"Rruga Lokale\"), por është i kuptueshëm edhe për\n"
 "Drejtorinë. Këto do të shfaqen në drop-down menynë në faqen Raportimit të problemeve."
 
-#: templates/web/base/report/_inspect.html:76
+#: templates/web/base/report/_inspect.html:88
 msgid "Choose another"
 msgstr ""
 
+#: templates/web/base/admin/exordefects/index.html:11
+#: templates/web/base/admin/exordefects/index.html:17
 #: templates/web/base/admin/stats.html:72
 #: templates/web/base/admin/stats.html:78
 msgid "Click here or enter as dd/mm/yyyy"
@@ -646,6 +660,8 @@ msgstr "Klikoni linkun në emailin tonë konfirmues për tu kyçur."
 #: templates/web/base/dashboard/index.html:142
 #: templates/web/base/report/_item.html:43
 #: templates/web/base/report/banner.html:15
+#: templates/web/base/report/inspect/state_groups_select.html:1
+#: templates/web/base/report/inspect/state_groups_select.html:18
 #: templates/web/zurich/admin/header.html:1
 #: templates/web/zurich/admin/header.html:10
 #: templates/web/zurich/admin/header.html:16
@@ -653,11 +669,11 @@ msgstr "Klikoni linkun në emailin tonë konfirmues për tu kyçur."
 msgid "Closed"
 msgstr "Mbyllur"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:809
+#: perllib/FixMyStreet/DB/Result/Problem.pm:854
 msgid "Closed by council"
 msgstr "Mbyllur nga këshilli."
 
-#: templates/web/base/reports/_list-filters.html:4
+#: templates/web/base/reports/_list-filters.html:8
 msgid "Closed reports"
 msgstr "Raporte të mbyllura"
 
@@ -746,8 +762,8 @@ msgstr "Kontakto ekipin"
 msgid "Coordinates:"
 msgstr "Koordinatat:"
 
-#: perllib/FixMyStreet/App/Controller/Admin.pm:1651
-#: perllib/FixMyStreet/App/Controller/Admin.pm:1679
+#: perllib/FixMyStreet/App/Controller/Admin.pm:1664
+#: perllib/FixMyStreet/App/Controller/Admin.pm:1692
 msgid "Could not find user"
 msgstr "Nuk mund te gjeni perdoruesin"
 
@@ -789,15 +805,15 @@ msgstr "Krijo nje raport"
 msgid "Create category"
 msgstr "Krijo kategorine"
 
-#: templates/web/base/admin/responsepriorities/edit.html:36
+#: templates/web/base/admin/responsepriorities/edit.html:46
 msgid "Create priority"
 msgstr "Krijo prioritet"
 
-#: perllib/FixMyStreet/Cobrand/Default.pm:715
+#: perllib/FixMyStreet/Cobrand/Default.pm:714
 msgid "Create reports/updates as the council"
 msgstr "Krijo raporte/përditësime si Kuvend Komunal"
 
-#: perllib/FixMyStreet/Cobrand/Default.pm:714
+#: perllib/FixMyStreet/Cobrand/Default.pm:713
 msgid "Create reports/updates on a user's behalf"
 msgstr "Krijo raport/përditësim në emër të shfrytëzuesit"
 
@@ -840,6 +856,10 @@ msgstr "Paneli"
 #: templates/web/zurich/admin/stats.html:35
 msgid "Dealt with by subdivision within 5 working days"
 msgstr "Trajtohet nga nën-drejtoritë brenda 5 ditëve të punës"
+
+#: templates/web/base/report/_inspect.html:67
+msgid "Defect type"
+msgstr ""
 
 #: perllib/FixMyStreet/App/Controller/Admin.pm:975
 #: templates/web/base/admin/template_edit.html:50
@@ -916,23 +936,30 @@ msgstr "Nuk i'u pelqen kjo forme?"
 msgid "Down one"
 msgstr ""
 
+#: perllib/FixMyStreet/Cobrand/Oxfordshire.pm:142
+#: templates/web/base/admin/exordefects/index.html:1
+msgid "Download Exor RDI"
+msgstr ""
+
 #: templates/web/base/js/translation_strings.html:52
 msgid "Drag and drop photos here or <u>click to upload</u>"
 msgstr "Merr dhe lësho fotot këtu ose <u>kliko për të ngarkuar foto</u>"
 
 #: templates/web/base/admin/report_blocks.html:1
 #: templates/web/base/admin/report_blocks.html:16
+#: templates/web/base/report/inspect/state_groups_select.html:1
+#: templates/web/base/report/inspect/state_groups_select.html:10
 #: templates/web/base/report/update/form_update.html:41
 #: templates/web/base/report/update/form_update.html:43
 msgid "Duplicate"
 msgstr "Dyfisho"
 
-#: templates/web/base/report/_inspect.html:71
+#: templates/web/base/report/_inspect.html:83
 #, fuzzy
 msgid "Duplicate of"
 msgstr "Dyfisho"
 
-#: templates/web/base/report/_inspect.html:81
+#: templates/web/base/report/_inspect.html:93
 #, fuzzy
 msgid "Duplicates"
 msgstr "Dyfisho"
@@ -949,7 +976,7 @@ msgstr ""
 "Kjo do të thotë që ju mund të shtoni shumë kategori edhe në qoftë se ju keni vetëm një kontakt për llojin e problemit"
 
 #: templates/web/base/report/_inspect.html:15
-#: templates/web/base/report/_item.html:73
+#: templates/web/base/report/_item.html:81
 msgid "Easting/Northing:"
 msgstr "Lëvizje drejtë Lindjes/Veriut:"
 
@@ -968,23 +995,23 @@ msgstr "Përditëso"
 msgid "Edit body details"
 msgstr "Përditëso detajet:"
 
-#: perllib/FixMyStreet/Cobrand/Default.pm:725
+#: perllib/FixMyStreet/Cobrand/Default.pm:724
 msgid "Edit other users' details"
 msgstr "Përditëso detajet e përdoruesit"
 
-#: perllib/FixMyStreet/Cobrand/Default.pm:726
+#: perllib/FixMyStreet/Cobrand/Default.pm:725
 msgid "Edit other users' permissions"
 msgstr "Përditëso autorizimet e përdoruesit"
 
-#: perllib/FixMyStreet/Cobrand/Default.pm:709
+#: perllib/FixMyStreet/Cobrand/Default.pm:708
 msgid "Edit report category"
 msgstr "Përditëso kategorinë e raporteve"
 
-#: perllib/FixMyStreet/Cobrand/Default.pm:710
+#: perllib/FixMyStreet/Cobrand/Default.pm:709
 msgid "Edit report priority"
 msgstr "Përditëso prioritetin e raportit"
 
-#: perllib/FixMyStreet/Cobrand/Default.pm:708
+#: perllib/FixMyStreet/Cobrand/Default.pm:707
 msgid "Edit reports"
 msgstr "Përditëso raportet"
 
@@ -1023,7 +1050,7 @@ msgstr "Editor"
 msgid "Email"
 msgstr "Email"
 
-#: perllib/FixMyStreet/App/Controller/Admin.pm:1627
+#: perllib/FixMyStreet/App/Controller/Admin.pm:1640
 msgid "Email added to abuse list"
 msgstr "Emaili u shtua te lista e abuzimeve"
 
@@ -1041,7 +1068,7 @@ msgstr "Notifikimi me email u krijua"
 msgid "Email alert deleted"
 msgstr "Notifikimi me email u fshi"
 
-#: perllib/FixMyStreet/App/Controller/Admin.pm:1624
+#: perllib/FixMyStreet/App/Controller/Admin.pm:1637
 msgid "Email already in abuse list"
 msgstr "Emaili tanimë është në listë e abuzuesve"
 
@@ -1074,6 +1101,7 @@ msgid ""
 "          problem must be emailed, while others can be sent over Open311."
 msgstr ""
 
+#: templates/web/base/admin/exordefects/index.html:16
 #: templates/web/base/admin/stats.html:77
 msgid "End Date:"
 msgstr "Data e fundit:"
@@ -1095,6 +1123,7 @@ msgstr "Shkruani një emër të rrugës apo zonë."
 msgid "Enter a nearby postcode, or street name and area"
 msgstr "Shkruani një emër të rrugës apo zonë"
 
+#: perllib/FixMyStreet/Cobrand/DansMonQwat.pm:14
 #: templates/web/base/around/postcode_form.html:5
 #: templates/web/base/around/postcode_form.html:6
 msgid "Enter a nearby street name and area"
@@ -1120,8 +1149,8 @@ msgstr "Pershkruaje problemin"
 msgid "Error"
 msgstr "Gabim"
 
-#: templates/web/base/reports/_list-filters.html:11
-#: templates/web/base/reports/_list-filters.html:19
+#: templates/web/base/reports/_list-filters.html:15
+#: templates/web/base/reports/_list-filters.html:23
 msgid "Everything"
 msgstr "Çdo gjë"
 
@@ -1154,6 +1183,11 @@ msgstr "i jashtëm"
 msgid "External ID"
 msgstr "ID e jashtme"
 
+#: templates/web/base/admin/responsepriorities/edit.html:27
+#, fuzzy
+msgid "External ID:"
+msgstr "ID e jashtme"
+
 #: templates/web/base/admin/body-form.html:87
 msgid "External URL"
 msgstr "URL i jashtëm"
@@ -1171,8 +1205,8 @@ msgstr "Ekipi i jashtëm"
 msgid "Extra data:"
 msgstr "Te dhena shtese:"
 
-#: templates/web/base/report/_inspect.html:116
-#: templates/web/base/report/_item.html:98
+#: templates/web/base/report/_inspect.html:129
+#: templates/web/base/report/_item.html:106
 msgid "Extra details"
 msgstr "Ekstra detajet"
 
@@ -1201,6 +1235,8 @@ msgstr "Rregulloni këtë duke zgjedhur një <strong> zonë të mbuluar </ stron
 #: templates/web/base/dashboard/index.html:142
 #: templates/web/base/report/_item.html:41
 #: templates/web/base/report/banner.html:12
+#: templates/web/base/report/inspect/state_groups_select.html:1
+#: templates/web/base/report/inspect/state_groups_select.html:17
 #: templates/web/base/report/update/form_update.html:41
 #: templates/web/base/report/update/form_update.html:45
 msgid "Fixed"
@@ -1208,6 +1244,8 @@ msgstr "E rregulluar"
 
 #: templates/web/base/admin/report_blocks.html:1
 #: templates/web/base/admin/report_blocks.html:13
+#: templates/web/base/report/inspect/state_groups_select.html:1
+#: templates/web/base/report/inspect/state_groups_select.html:7
 msgid "Fixed - Council"
 msgstr "E rregulluar - Këshilli"
 
@@ -1216,7 +1254,7 @@ msgstr "E rregulluar - Këshilli"
 msgid "Fixed - User"
 msgstr "E rregulluar - Perdoruesi"
 
-#: templates/web/base/reports/_list-filters.html:5
+#: templates/web/base/reports/_list-filters.html:9
 msgid "Fixed reports"
 msgstr "Raportimet që janë rregulluar"
 
@@ -1225,7 +1263,7 @@ msgid "Fixed:"
 msgstr "E rregulluar:"
 
 #: templates/web/base/admin/body-form.html:95
-#: templates/web/base/admin/responsepriorities/edit.html:31
+#: templates/web/base/admin/responsepriorities/edit.html:41
 #: templates/web/zurich/admin/body-form.html:36
 msgid "Flag as deleted"
 msgstr "E fshirë"
@@ -1314,8 +1352,8 @@ msgstr "Jemi të kënaqur që është regulluar!"
 #: templates/web/base/admin/index.html:45
 #: templates/web/base/alert/index.html:34
 #: templates/web/base/around/postcode_form.html:13
-#: templates/web/base/reports/_list-filters.html:29
-#: templates/web/base/reports/_list-filters.html:44
+#: templates/web/base/reports/_list-filters.html:33
+#: templates/web/base/reports/_list-filters.html:48
 #: templates/web/zurich/admin/stats.html:26
 msgid "Go"
 msgstr "Vazhdo"
@@ -1324,7 +1362,7 @@ msgstr "Vazhdo"
 msgid "Going to send questionnaire?"
 msgstr "Do dërgoni pyetsorin?"
 
-#: perllib/FixMyStreet/Cobrand/Default.pm:727
+#: perllib/FixMyStreet/Cobrand/Default.pm:726
 msgid "Grant access to the admin"
 msgstr "Lejoni akses për administratorin"
 
@@ -1344,7 +1382,7 @@ msgstr "A ka qene i rregulluar ky problem?"
 msgid "Have you ever reported a problem to a council before, or is this your first time?"
 msgstr "A keni raportuar ndonjë problem më herët për këshillin apo kjo është hera e parë?"
 
-#: templates/web/base/footer.html:35
+#: templates/web/base/main_nav_items.html:40
 #: templates/web/zurich/about/faq-de-ch.html:1
 #: templates/web/zurich/footer.html:23
 #: templates/web/zurich/nav_over_content.html:8
@@ -1369,6 +1407,9 @@ msgstr "Pershendetje %s"
 #: templates/web/base/admin/report_blocks.html:19
 #: templates/web/base/admin/report_blocks.html:28
 #: templates/web/base/admin/update_edit.html:30
+#: templates/web/base/report/inspect/state_groups_select.html:1
+#: templates/web/base/report/inspect/state_groups_select.html:12
+#: templates/web/base/report/inspect/state_groups_select.html:19
 #: templates/web/zurich/admin/header.html:1
 #: templates/web/zurich/admin/header.html:11
 #: templates/web/zurich/admin/stats.html:32
@@ -1433,6 +1474,10 @@ msgid ""
 "          For basic installations, you don't need to join bodies in this way."
 msgstr ""
 
+#: templates/web/base/admin/responsepriorities/edit.html:23
+msgid "If this priority is passed to an external service (e.g. Exor/Confirm) enter the priority code to use with that service here."
+msgstr ""
+
 #: templates/web/base/admin/contact-form.html:14
 msgid ""
 "If two or more bodies serve the same location, FixMyStreet combines identical categories into a single entry in\n"
@@ -1443,7 +1488,7 @@ msgstr ""
 msgid "If you get some more information about the status of your problem, please come back to the site and leave an update."
 msgstr "Nëse merrni më shumë informata për gjendjën e problemit tuaj, ju lutem kthehuni në faqe dhe leni një përditësim."
 
-#: templates/web/base/admin/responsepriorities/edit.html:23
+#: templates/web/base/admin/responsepriorities/edit.html:33
 msgid "If you only want this priority to be an option for specific categories, pick them here. By default they will show for all categories."
 msgstr "Nëse ju dëshironi vetëm  që ky prioritet të jetë një alternativë për kategori të veçanta, merr ato këtu. By default ata do të tregojnë për të gjitha kategoritë"
 
@@ -1523,6 +1568,8 @@ msgstr ""
 #: templates/web/base/admin/report_blocks.html:1
 #: templates/web/base/admin/report_blocks.html:9
 #: templates/web/base/report/banner.html:19
+#: templates/web/base/report/inspect/state_groups_select.html:1
+#: templates/web/base/report/inspect/state_groups_select.html:5
 #: templates/web/zurich/admin/header.html:1
 #: templates/web/zurich/admin/header.html:8
 msgid "In progress"
@@ -1548,7 +1595,12 @@ msgstr "Gabim ka_foto value \"%s\""
 msgid "Inspection required"
 msgstr "Inspektimi kërkohet"
 
-#: perllib/FixMyStreet/Cobrand/Default.pm:712
+#: templates/web/base/admin/exordefects/index.html:22
+#, fuzzy
+msgid "Inspector:"
+msgstr "Inspektimi kërkohet"
+
+#: perllib/FixMyStreet/Cobrand/Default.pm:711
 msgid "Instruct contractors to fix problems"
 msgstr "Instrukto kontraktorët të rregullojnë problemet"
 
@@ -1558,6 +1610,8 @@ msgstr "Shenim i brendshem"
 
 #: templates/web/base/admin/report_blocks.html:1
 #: templates/web/base/admin/report_blocks.html:18
+#: templates/web/base/report/inspect/state_groups_select.html:1
+#: templates/web/base/report/inspect/state_groups_select.html:11
 msgid "Internal referral"
 msgstr "Rekomandim i brendshem"
 
@@ -1565,7 +1619,7 @@ msgstr "Rekomandim i brendshem"
 msgid "Invalid agency_responsible value %s"
 msgstr "Vlerë agency_responsible e gabuar %s"
 
-#: perllib/FixMyStreet/App/Controller/Admin.pm:1485
+#: perllib/FixMyStreet/App/Controller/Admin.pm:1498
 msgid "Invalid end date"
 msgstr "Data e fundit jovalide"
 
@@ -1573,11 +1627,11 @@ msgstr "Data e fundit jovalide"
 msgid "Invalid format %s specified."
 msgstr "Format jo i vlefshëm %s i specifikuar."
 
-#: perllib/FixMyStreet/App/Controller/Report.pm:384
+#: perllib/FixMyStreet/App/Controller/Report.pm:391
 msgid "Invalid location. New location must be covered by the same council."
 msgstr "Lokacion jo valid. Lokacioni i ri duhet të mbulohet nga i njëjti këshill."
 
-#: perllib/FixMyStreet/App/Controller/Admin.pm:1481
+#: perllib/FixMyStreet/App/Controller/Admin.pm:1494
 msgid "Invalid start date"
 msgstr "Data e fillimit jovalide"
 
@@ -1585,6 +1639,8 @@ msgstr "Data e fillimit jovalide"
 #: templates/web/base/admin/report_blocks.html:7
 #: templates/web/base/dashboard/index.html:140
 #: templates/web/base/dashboard/index.html:141
+#: templates/web/base/report/inspect/state_groups_select.html:1
+#: templates/web/base/report/inspect/state_groups_select.html:4
 #: templates/web/base/report/update/form_update.html:41
 #: templates/web/base/report/update/form_update.html:42
 msgid "Investigating"
@@ -1630,11 +1686,11 @@ msgstr "Perditesimi i fundit:"
 msgid "Last&nbsp;update:"
 msgstr "Perditesimi&nbsp;fundit:"
 
-#: templates/web/base/report/_item.html:78
+#: templates/web/base/report/_item.html:86
 msgid "Latitude/Longitude:"
 msgstr ""
 
-#: templates/web/base/reports/_list-filters.html:41
+#: templates/web/base/reports/_list-filters.html:45
 msgid "Least recently updated"
 msgstr "I përditësuar kohët e fundit"
 
@@ -1663,7 +1719,8 @@ msgstr ""
 msgid "Local RSS feeds and email alerts for ‘%s’"
 msgstr ""
 
-#: templates/web/base/footer.html:32
+#: templates/web/base/main_nav_items.html:31
+#: templates/web/base/main_nav_items.html:37
 msgid "Local alerts"
 msgstr "Njoftimet lokale"
 
@@ -1671,15 +1728,31 @@ msgstr "Njoftimet lokale"
 msgid "Locate the problem on a map of the area"
 msgstr "Lokalizo problemin në hartë në vendin e caktuar"
 
+#: templates/web/base/auth/general.html:22
+#: templates/web/base/report/new/form_user_loggedout.html:6
+#: templates/web/base/report/update/form_user_loggedout.html:7
+msgid "Log in with Facebook"
+msgstr ""
+
+#: templates/web/base/auth/general.html:30
+#: templates/web/base/report/new/form_user_loggedout.html:14
+#: templates/web/base/report/update/form_user_loggedout.html:15
+msgid "Log in with Twitter"
+msgstr ""
+
+#: templates/web/base/js/translation_strings.html:56
+msgid "Log in with email"
+msgstr ""
+
 #: templates/web/base/js/translation_strings.html:44
 msgid "MAP"
 msgstr "HARTA"
 
-#: perllib/FixMyStreet/Cobrand/Default.pm:713
+#: perllib/FixMyStreet/Cobrand/Default.pm:712
 msgid "Manage shortlist"
 msgstr "Menaxhoni listën e shkurtë"
 
-#: templates/web/base/reports/_list-filters.html:36
+#: templates/web/base/reports/_list-filters.html:40
 msgid "Manual order"
 msgstr ""
 
@@ -1703,7 +1776,7 @@ msgstr "Shëno si të rregulluar/mbyllyr në 8 javët e kaluara"
 msgid "Marked fixed/closed more than eight weeks ago"
 msgstr "Shëno si të rregulluar/mbyllyr në më shumë se 8 javë"
 
-#: perllib/FixMyStreet/Cobrand/Default.pm:711
+#: perllib/FixMyStreet/Cobrand/Default.pm:710
 msgid "Markup problem details"
 msgstr ""
 
@@ -1731,7 +1804,7 @@ msgstr "Mungesë juridiksioni_id"
 msgid "Moderate"
 msgstr "Mesatare"
 
-#: perllib/FixMyStreet/Cobrand/Default.pm:707
+#: perllib/FixMyStreet/Cobrand/Default.pm:706
 msgid "Moderate report details"
 msgstr "Raportet e detajuara mesatare"
 
@@ -1747,7 +1820,7 @@ msgstr "Moderuar me divizion brenda një ditë pune"
 msgid "Month"
 msgstr "Muaji"
 
-#: templates/web/base/reports/_list-filters.html:42
+#: templates/web/base/reports/_list-filters.html:46
 msgid "Most commented"
 msgstr "Më të komentuarat"
 
@@ -1883,7 +1956,7 @@ msgstr "Gjendje e re"
 msgid "New template"
 msgstr "Shabllon i ri"
 
-#: templates/web/base/reports/_list-filters.html:38
+#: templates/web/base/reports/_list-filters.html:42
 msgid "Newest"
 msgstr "Më e reja"
 
@@ -1891,6 +1964,7 @@ msgstr "Më e reja"
 msgid "Next"
 msgstr "Tjetra"
 
+#: perllib/FixMyStreet/Cobrand/Default.pm:1203
 #: templates/web/base/admin/body.html:86 templates/web/base/admin/body.html:88
 #: templates/web/base/admin/body.html:92 templates/web/base/admin/body.html:94
 #: templates/web/base/admin/category_edit.html:4
@@ -1919,7 +1993,7 @@ msgstr "Ska drejtori"
 msgid "No council"
 msgstr "Ska council"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:430
+#: perllib/FixMyStreet/DB/Result/Problem.pm:432
 msgid "No council selected"
 msgstr "Asnjë council  e zgjedhur"
 
@@ -1937,6 +2011,8 @@ msgstr ""
 
 #: templates/web/base/admin/report_blocks.html:1
 #: templates/web/base/admin/report_blocks.html:14
+#: templates/web/base/report/inspect/state_groups_select.html:1
+#: templates/web/base/report/inspect/state_groups_select.html:8
 #: templates/web/base/report/update/form_update.html:41
 #: templates/web/base/report/update/form_update.html:44
 msgid "No further action"
@@ -1946,6 +2022,14 @@ msgstr "E pamundur të zgjidhet"
 #: templates/web/zurich/admin/report_edit.html:259
 msgid "No further updates"
 msgstr "nuk ka perditesime tjera"
+
+#: perllib/FixMyStreet/App/Controller/Admin/ExorDefects.pm:84
+msgid "No inspections by that inspector in the selected date range."
+msgstr ""
+
+#: perllib/FixMyStreet/App/Controller/Admin/ExorDefects.pm:86
+msgid "No inspections in the selected date range."
+msgstr ""
 
 #: templates/web/base/js/translation_strings.html:37
 msgid "No result returned"
@@ -1987,6 +2071,8 @@ msgstr ""
 
 #: templates/web/base/admin/report_blocks.html:1
 #: templates/web/base/admin/report_blocks.html:15
+#: templates/web/base/report/inspect/state_groups_select.html:1
+#: templates/web/base/report/inspect/state_groups_select.html:9
 #: templates/web/base/report/update/form_update.html:41
 #: templates/web/base/report/update/form_update.html:44
 msgid "Not Responsible"
@@ -2064,7 +2150,7 @@ msgstr "E vjeter <br>e kryer"
 msgid "Older <br>problems"
 msgstr "Probleme <br> te vjetra"
 
-#: templates/web/base/reports/_list-filters.html:39
+#: templates/web/base/reports/_list-filters.html:43
 msgid "Oldest"
 msgstr "Më i vjetri"
 
@@ -2075,6 +2161,9 @@ msgstr "Më i vjetri"
 #: templates/web/base/admin/report_blocks.html:6
 #: templates/web/base/admin/update_edit.html:30
 #: templates/web/base/dashboard/index.html:140
+#: templates/web/base/report/inspect/state_groups_select.html:1
+#: templates/web/base/report/inspect/state_groups_select.html:16
+#: templates/web/base/report/inspect/state_groups_select.html:3
 #: templates/web/base/report/update/form_update.html:41
 #: templates/web/zurich/admin/header.html:1
 #: templates/web/zurich/admin/header.html:7
@@ -2118,15 +2207,15 @@ msgstr "Ose raportoni problemet n:"
 msgid "Or you can subscribe to an alert based upon what ward or council you&rsquo;re in:"
 msgstr ""
 
-#: perllib/FixMyStreet/App/Controller/Report/New.pm:1064
+#: perllib/FixMyStreet/App/Controller/Report/New.pm:1061
 #: perllib/FixMyStreet/App/Controller/Report/New.pm:658
 #: perllib/FixMyStreet/App/Controller/Report/New.pm:659
-#: perllib/FixMyStreet/DB/Result/Problem.pm:595
-#: perllib/FixMyStreet/DB/Result/Problem.pm:602
-#: perllib/FixMyStreet/DB/Result/Problem.pm:617
+#: perllib/FixMyStreet/DB/Result/Problem.pm:619
 #: perllib/FixMyStreet/DB/Result/Problem.pm:626
-#: perllib/FixMyStreet/Script/Reports.pm:185
-#: perllib/FixMyStreet/Script/Reports.pm:200
+#: perllib/FixMyStreet/DB/Result/Problem.pm:641
+#: perllib/FixMyStreet/DB/Result/Problem.pm:650
+#: perllib/FixMyStreet/Script/Reports.pm:183
+#: perllib/FixMyStreet/Script/Reports.pm:198
 msgid "Other"
 msgstr "Tjera"
 
@@ -2165,7 +2254,7 @@ msgstr "Fjalekalimi:"
 msgid "Permalink"
 msgstr ""
 
-#: templates/web/base/admin/user-form.html:152
+#: templates/web/base/admin/user-form.html:144
 msgid "Permissions:"
 msgstr "Lejet"
 
@@ -2259,14 +2348,14 @@ msgid "Please check your email address is correct"
 msgstr "Ju lutem kontrolloni email adresen tuaj nese eshte e sakte"
 
 #: perllib/FixMyStreet/App/Controller/Admin.pm:350
-#: perllib/FixMyStreet/App/Controller/Report/New.pm:845
-#: perllib/FixMyStreet/App/Controller/Report/New.pm:868
-#: perllib/FixMyStreet/DB/Result/Problem.pm:441
+#: perllib/FixMyStreet/App/Controller/Report/New.pm:844
+#: perllib/FixMyStreet/App/Controller/Report/New.pm:867
+#: perllib/FixMyStreet/DB/Result/Problem.pm:443
 #: templates/web/base/js/translation_strings.html:9
 msgid "Please choose a category"
 msgstr "Ju lutem zgjedhni kategorine"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:447
+#: perllib/FixMyStreet/DB/Result/Problem.pm:449
 msgid "Please choose a property type"
 msgstr "Ju lutem zgjedhni tipin e pronës"
 
@@ -2293,7 +2382,7 @@ msgid "Please enter a message"
 msgstr "Ju lutem shkruaj nje mesazh"
 
 #: perllib/FixMyStreet/App/Controller/Admin.pm:1204
-#: perllib/FixMyStreet/App/Controller/Admin.pm:1362
+#: perllib/FixMyStreet/App/Controller/Admin.pm:1366
 msgid "Please enter a name"
 msgstr "Ju lutem shkruani emrin"
 
@@ -2308,13 +2397,13 @@ msgid "Please enter a password"
 msgstr "Ju lutem shkruaj fjalekalimin"
 
 #: perllib/FixMyStreet/App/Controller/Contact.pm:114
-#: perllib/FixMyStreet/DB/Result/Problem.pm:424
+#: perllib/FixMyStreet/DB/Result/Problem.pm:426
 #: templates/web/base/js/translation_strings.html:3
 msgid "Please enter a subject"
 msgstr "Ju lutem shkruaj subjektin"
 
 #: perllib/FixMyStreet/App/Controller/Admin.pm:1201
-#: perllib/FixMyStreet/App/Controller/Admin.pm:1359
+#: perllib/FixMyStreet/App/Controller/Admin.pm:1363
 #: perllib/FixMyStreet/App/Controller/Admin.pm:363
 #: perllib/FixMyStreet/DB/Result/User.pm:164
 #: templates/web/base/js/translation_strings.html:12
@@ -2327,7 +2416,7 @@ msgstr "Ju lutem shkruaj nje email valid"
 msgid "Please enter a valid email address"
 msgstr "Ju lutem shkruani një email adresë valide"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:427
+#: perllib/FixMyStreet/DB/Result/Problem.pm:429
 #: templates/web/base/js/translation_strings.html:4
 msgid "Please enter some details"
 msgstr "Ju lutem shkruaj disa te dhena"
@@ -2361,7 +2450,7 @@ msgstr "Ju lutem shkruani emrin tuaj të plotë, council i cili kërkon këtë i
 
 #: perllib/FixMyStreet/App/Controller/Contact.pm:112
 #: perllib/FixMyStreet/DB/Result/Comment.pm:124
-#: perllib/FixMyStreet/DB/Result/Problem.pm:435
+#: perllib/FixMyStreet/DB/Result/Problem.pm:437
 #: perllib/FixMyStreet/DB/Result/User.pm:157
 #: templates/web/base/js/translation_strings.html:6
 msgid "Please enter your name"
@@ -2424,7 +2513,7 @@ msgstr ""
 msgid "Please note:"
 msgstr "Ju lutem vini re:"
 
-#: perllib/FixMyStreet/App/Controller/Report.pm:354
+#: perllib/FixMyStreet/App/Controller/Report.pm:351
 msgid "Please provide a public update for this report."
 msgstr "Ju lutem sigorni një përditësim publik për këtë raport"
 
@@ -2483,15 +2572,15 @@ msgstr "Posto"
 msgid "Posted anonymously at %s"
 msgstr "Postuar ne menyre anonime ne %s"
 
-#: perllib/FixMyStreet/DB/Result/Comment.pm:255
+#: perllib/FixMyStreet/DB/Result/Comment.pm:257
 msgid "Posted by %s at %s"
 msgstr "Postuar nga %s ne %s"
 
-#: perllib/FixMyStreet/DB/Result/Comment.pm:250
+#: perllib/FixMyStreet/DB/Result/Comment.pm:252
 msgid "Posted by <strong>%s</strong> (%s) at %s"
 msgstr "Postuar nga  <strong>%s</strong> (%s) ne %s"
 
-#: perllib/FixMyStreet/DB/Result/Comment.pm:252
+#: perllib/FixMyStreet/DB/Result/Comment.pm:254
 msgid "Posted by <strong>%s</strong> at %s"
 msgstr "Postuar nga  <strong>%s</strong> ne %s"
 
@@ -2507,12 +2596,12 @@ msgstr "Paraprak"
 msgid "Priorities"
 msgstr "Prioritetet"
 
-#: templates/web/base/report/_inspect.html:96
-#: templates/web/base/report/_item.html:90
+#: templates/web/base/report/_inspect.html:108
+#: templates/web/base/report/_item.html:98
 msgid "Priority"
 msgstr "Prioritet"
 
-#: templates/web/base/footer.html:38
+#: templates/web/base/main_nav_items.html:43
 msgid "Privacy"
 msgstr "Privatësi"
 
@@ -2563,7 +2652,7 @@ msgstr "Problemi eshte shenuar si i hapur."
 msgid "Problem state change based on survey results"
 msgstr "Ndryshim i gjendjes se problemit bazuar ne rezultatet e anketes"
 
-#: perllib/FixMyStreet/Cobrand/Default.pm:706
+#: perllib/FixMyStreet/Cobrand/Default.pm:705
 #: templates/web/base/admin/flagged.html:10
 msgid "Problems"
 msgstr "Problemet"
@@ -2584,7 +2673,7 @@ msgstr "Problemet e raportuara se fundi ne FixMyStreet"
 msgid "Problems within %.1fkm of this location"
 msgstr "Problemet brenda %.1fkm te ketij lokacioni"
 
-#: perllib/FixMyStreet/Cobrand/Default.pm:834
+#: perllib/FixMyStreet/Cobrand/Default.pm:833
 #: perllib/FixMyStreet/Cobrand/FiksGataMi.pm:137
 #: perllib/FixMyStreet/Cobrand/UK.pm:208
 msgid "Problems within %s"
@@ -2636,7 +2725,7 @@ msgstr "Përditësim publik."
 msgid "Public response:"
 msgstr "Pergjigje publike:"
 
-#: templates/web/base/report/_inspect.html:134
+#: templates/web/base/report/_inspect.html:147
 msgid "Public update:"
 msgstr "Përditësim publik."
 
@@ -2696,7 +2785,7 @@ msgstr "RSS feed i %s, brenda lagjes %s"
 msgid "RSS feed of nearby problems"
 msgstr "RSS feed i problemeve ne afersi"
 
-#: perllib/FixMyStreet/Cobrand/Default.pm:835
+#: perllib/FixMyStreet/Cobrand/Default.pm:834
 #: perllib/FixMyStreet/Cobrand/FiksGataMi.pm:136
 #: perllib/FixMyStreet/Cobrand/UK.pm:215
 msgid "RSS feed of problems within %s"
@@ -2721,7 +2810,7 @@ msgstr "RSS feed per te rejat rreth ketij problemi"
 msgid "Receive email when updates are left on this problem."
 msgstr "Prano email kur ka perditesime te ketij problemi"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:720
+#: perllib/FixMyStreet/DB/Result/Problem.pm:766
 msgid "Received by %s moments later"
 msgstr "Pranuar nga  momente më vonë"
 
@@ -2739,7 +2828,7 @@ msgstr "Rregullimet <br> e fundit"
 msgid "Recently reported problems"
 msgstr "Problemet e raportuara së fundmi"
 
-#: templates/web/base/reports/_list-filters.html:40
+#: templates/web/base/reports/_list-filters.html:44
 msgid "Recently updated"
 msgstr "Përditësuar së fundmi"
 
@@ -2778,12 +2867,12 @@ msgid "Report"
 msgstr "Raporto"
 
 #: templates/web/base/report/_inspect.html:10
-#: templates/web/base/report/_item.html:68
+#: templates/web/base/report/_item.html:76
 msgid "Report ID:"
 msgstr "ID e raportit:"
 
-#: templates/web/base/footer.html:23 templates/web/base/header_logo.html:2
-#: templates/web/zurich/footer.html:19
+#: templates/web/base/header_logo.html:2
+#: templates/web/base/main_nav_items.html:1 templates/web/zurich/footer.html:19
 #: templates/web/zurich/nav_over_content.html:4
 msgid "Report a problem"
 msgstr "Raporto nje problem"
@@ -2812,7 +2901,17 @@ msgstr "Raportoni problemin tuaj"
 msgid "Report, view, or discuss local problems"
 msgstr "Raporto,shiqo apo diskuto problemet lokale"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:606
+#: templates/web/base/report/_item.html:49
+#, fuzzy
+msgid "Reported %d day ago"
+msgstr "Raportuar nga %s ne %s"
+
+#: templates/web/base/report/_item.html:49
+#, fuzzy
+msgid "Reported %d days ago"
+msgstr "Raportuar nga %s ne %s"
+
+#: perllib/FixMyStreet/DB/Result/Problem.pm:630
 #: templates/web/base/contact/index.html:55
 msgid "Reported anonymously at %s"
 msgstr "Raportuar ne menyre anonime te %s"
@@ -2822,7 +2921,7 @@ msgstr "Raportuar ne menyre anonime te %s"
 msgid "Reported before"
 msgstr "Të raportuara më parë"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:630
+#: perllib/FixMyStreet/DB/Result/Problem.pm:654
 #: templates/web/base/contact/index.html:57
 msgid "Reported by %s at %s"
 msgstr "Raportuar nga %s ne %s"
@@ -2836,27 +2935,27 @@ msgstr "Raportuar nga:"
 msgid "Reported in the %s category"
 msgstr "Raportuar ne kategorine %s"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:603
+#: perllib/FixMyStreet/DB/Result/Problem.pm:627
 msgid "Reported in the %s category anonymously at %s"
 msgstr "Raportuar ne kategorine %s ne menyre anonime ne %s"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:627
+#: perllib/FixMyStreet/DB/Result/Problem.pm:651
 msgid "Reported in the %s category by %s at %s"
 msgstr "Raportuar ne kategorine %s nga %s ne %s"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:600
+#: perllib/FixMyStreet/DB/Result/Problem.pm:624
 msgid "Reported via %s anonymously at %s"
 msgstr "Raportuar nepermjet %s ne menyre anonime ne %s"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:624
+#: perllib/FixMyStreet/DB/Result/Problem.pm:648
 msgid "Reported via %s by %s at %s"
 msgstr "Raportuar nepermjet %s nga %s ne %s"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:597
+#: perllib/FixMyStreet/DB/Result/Problem.pm:621
 msgid "Reported via %s in the %s category anonymously at %s"
 msgstr "Raportuar nepermjet %s ne kategorine %s ne menyre anonime ne %s"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:619
+#: perllib/FixMyStreet/DB/Result/Problem.pm:643
 msgid "Reported via %s in the %s category by %s at %s"
 msgstr "Raportuar nepermjet %s ne kategorine %s ne %s"
 
@@ -2892,10 +2991,6 @@ msgstr "Raportimet jane te kufizuara ne gjatesine %s karaktere. Ju lutem shkurto
 msgid "Reports awaiting approval"
 msgstr "Raporti është duke pritur për aprovim"
 
-#: templates/web/base/admin/user-form.html:127
-msgid "Reports from users with high enough reputation will be sent immediately without requiring inspection. Each category's threshold can be managed on its edit page. Users earn reputation when a report they have made is marked as inspected by inspectors."
-msgstr "Raportet nga përdoruesit me reputacion të lartë dhe të mjaftueshëm do të dërgohen menjëherë pa kërkuar inspektimin e mëtutjeshëm. Pragu i çdo kategorie mund të menaxhohet në faqen e saj të redaktimit. Përdoruesit fitojnë reputacion kur një raport që kanë bërë është shënuar si i kontrolluar nga inspektorët."
-
 #: templates/web/base/admin/user-form.html:107
 msgid "Reports made by trusted users will be sent to the responsible body without being inspected first."
 msgstr "Raportet e bëra nga përdoruesit e besueshëm do të dërgohen tek drejtoria përgjegjëse pa u kontrolluar më parë."
@@ -2915,10 +3010,6 @@ msgstr "Raportet automatikisht do të dërgohen pa nevojë për tu kontrolluar n
 #: templates/web/base/admin/contact-form.html:94
 msgid "Reputation threshold"
 msgstr ""
-
-#: templates/web/base/admin/user-form.html:130
-msgid "Reputation:"
-msgstr "Reputacioni:"
 
 #: templates/web/base/admin/report_edit.html:84
 msgid "Resend report"
@@ -2966,15 +3057,15 @@ msgstr "Operatori i rrugës për emrin e kësaj rruge  (rrjedh nga numri i refer
 msgid "Road operator for this named road (from OpenStreetMap): %s"
 msgstr "Operatori i rrugës për emrin e kësaj rruge (nga OpenStreetMap)."
 
-#: perllib/FixMyStreet/App/Controller/Admin.pm:1726
-#: perllib/FixMyStreet/App/Controller/Admin.pm:1730
+#: perllib/FixMyStreet/App/Controller/Admin.pm:1739
+#: perllib/FixMyStreet/App/Controller/Admin.pm:1743
 #: templates/web/base/admin/report_edit.html:163
 #: templates/web/base/admin/update_edit.html:66
 #: templates/web/zurich/admin/report_edit.html:118
 msgid "Rotate Left"
 msgstr "Rrotullo Majtas"
 
-#: perllib/FixMyStreet/App/Controller/Admin.pm:1726
+#: perllib/FixMyStreet/App/Controller/Admin.pm:1739
 #: templates/web/base/admin/report_edit.html:164
 #: templates/web/base/admin/update_edit.html:67
 #: templates/web/zurich/admin/report_edit.html:119
@@ -2990,22 +3081,22 @@ msgstr "Rrotullimi i kësaj foto do të heq dorë nga ndryshimet e paruajtura n�
 msgid "Satellite"
 msgstr "Satelitore"
 
-#: templates/web/base/report/_inspect.html:150
+#: templates/web/base/report/_inspect.html:163
 #, fuzzy
 msgid "Save + close as duplicate"
 msgstr "shenuar si raport i dyfishuar"
 
 #: templates/web/base/admin/contact-form.html:137
-#: templates/web/base/admin/responsepriorities/edit.html:36
+#: templates/web/base/admin/responsepriorities/edit.html:46
 #: templates/web/base/admin/template_edit.html:46
-#: templates/web/base/report/_inspect.html:150
+#: templates/web/base/report/_inspect.html:163
 #: templates/web/zurich/admin/body.html:62
 #: templates/web/zurich/admin/contact-form.html:20
 #: templates/web/zurich/admin/template_edit.html:29
 msgid "Save changes"
 msgstr "Ruaj ndryshimet"
 
-#: templates/web/base/report/_inspect.html:130
+#: templates/web/base/report/_inspect.html:143
 msgid "Save with a public update"
 msgstr "Ruaje me një përditësim për publikun"
 
@@ -3042,7 +3133,7 @@ msgstr "Gjate kerkimit nuk eshte gjetur asnje perdorues."
 msgid "See our privacy policy"
 msgstr "Shiqo rregulloren tonë të privatësisë"
 
-#: perllib/FixMyStreet/Cobrand/Default.pm:716
+#: perllib/FixMyStreet/Cobrand/Default.pm:715
 #, fuzzy
 msgid "See user detail for reports created as the council"
 msgstr "Krijo raporte/përditësime si Kuvend Komunal"
@@ -3077,7 +3168,7 @@ msgstr ""
 msgid "Sent report back"
 msgstr "Dërgo raportin prapa"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:724
+#: perllib/FixMyStreet/DB/Result/Problem.pm:769
 msgid "Sent to %s %s later"
 msgstr "Dërgo tek %s %s më vonë"
 
@@ -3098,6 +3189,7 @@ msgstr "Vendos tek lokacioni im i tanishëm"
 msgid "Share"
 msgstr "Shpërndajë"
 
+#: templates/web/base/main_nav_items.html:10
 #: templates/web/base/report/_main.html:136
 #: templates/web/base/report/_main.html:21
 #: templates/web/base/report/_main.html:29
@@ -3107,6 +3199,7 @@ msgstr "Lista e ngushtë"
 #: templates/web/base/report/_main.html:134
 #: templates/web/base/report/_main.html:20
 #: templates/web/base/report/_main.html:25
+#: templates/web/base/reports/_list-filters.html:4
 msgid "Shortlisted"
 msgstr "Përzgjedhur"
 
@@ -3130,7 +3223,8 @@ msgstr "Shfaq shenjat"
 
 #: templates/web/base/auth/general.html:117
 #: templates/web/base/auth/general.html:3
-#: templates/web/base/auth/general.html:86 templates/web/base/footer.html:26
+#: templates/web/base/auth/general.html:86
+#: templates/web/base/main_nav_items.html:6
 #: templates/web/zurich/auth/general.html:18
 #: templates/web/zurich/auth/general.html:35
 msgid "Sign in"
@@ -3209,7 +3303,7 @@ msgstr "Na vjen keq, ne nuk mund të ruajmë imazhin(et) tuaj, ju lutem provoni 
 msgid "Sorry, you don't have permission to do that."
 msgstr "Na vjen keq, ju nuk keni leje për të bërë atë."
 
-#: templates/web/base/reports/_list-filters.html:33
+#: templates/web/base/reports/_list-filters.html:37
 msgid "Sort by"
 msgstr "Ndaj sipas"
 
@@ -3221,6 +3315,7 @@ msgstr "Përdoruesit e stafit kanë leje për të hyrë brënda tek admin."
 msgid "Staff:"
 msgstr "Stafi:"
 
+#: templates/web/base/admin/exordefects/index.html:10
 #: templates/web/base/admin/stats.html:71
 msgid "Start Date:"
 msgstr "Data e Fillimit:"
@@ -3231,8 +3326,8 @@ msgstr "Data e Fillimit:"
 #: templates/web/base/admin/list_updates.html:11
 #: templates/web/base/admin/reports.html:16
 #: templates/web/base/admin/template_edit.html:40
-#: templates/web/base/report/_inspect.html:66
-#: templates/web/base/report/_item.html:86
+#: templates/web/base/report/_inspect.html:78
+#: templates/web/base/report/_item.html:94
 #: templates/web/base/report/update/form_update.html:39
 msgid "State"
 msgstr "Gjendje"
@@ -3269,7 +3364,7 @@ msgstr "Akoma hapur, nepermjet pyetesorit, %s"
 msgid "Street View"
 msgstr "Pamje e rrugës"
 
-#: perllib/FixMyStreet/Script/Reports.pm:194
+#: perllib/FixMyStreet/Script/Reports.pm:192
 msgid "Subcategory: %s"
 msgstr "Nenkategoria: %s"
 
@@ -3297,7 +3392,7 @@ msgstr "Dërgo"
 #: templates/web/base/admin/report_edit.html:174
 #: templates/web/base/admin/report_edit.html:24
 #: templates/web/base/admin/update_edit.html:77
-#: templates/web/base/admin/user-form.html:177
+#: templates/web/base/admin/user-form.html:170
 #: templates/web/zurich/admin/report_edit-sdm.html:124
 #: templates/web/zurich/admin/report_edit.html:264
 #: templates/web/zurich/admin/update_edit.html:38
@@ -3354,11 +3449,11 @@ msgstr "Permbledhje"
 msgid "Summary reports"
 msgstr "Raportet përmbledhëse"
 
-#: templates/web/base/admin/user-form.html:141
+#: templates/web/base/admin/user-form.html:133
 msgid "Superuser:"
 msgstr "Superpërdorues:"
 
-#: templates/web/base/admin/user-form.html:138
+#: templates/web/base/admin/user-form.html:130
 msgid "Superusers have permission to perform <strong>all actions</strong> within the admin."
 msgstr "Superpërdorues keni leje për të kryer <strong> të gjitha veprimet </ strong> brenda adminit."
 
@@ -3601,7 +3696,7 @@ msgstr "Ka problem në hapjën e faqes Të gjitha raportet. Ju lutem provoni pë
 msgid "There was a problem showing this page. Please try again later."
 msgstr "Ka probleme në hapjën e kësaj faqe. Ju lutem provoni përsëri më vonë."
 
-#: perllib/FixMyStreet/App/Controller/Report/New.pm:759
+#: perllib/FixMyStreet/App/Controller/Report/New.pm:758
 #: perllib/FixMyStreet/App/Controller/Report/Update.pm:152
 #: templates/web/base/auth/general.html:53
 #: templates/web/zurich/auth/general.html:28
@@ -3680,17 +3775,17 @@ msgstr ""
 "Kjo Drejtori do të pranojë vetëm raporte për probleme që janë të vendosura në <strong> zonën e mbuluar </ strong> .\n"
 "Një drejtori nuk do të marrë ndonjë raport vetëm  nëse ajo mbulon të paktën një zonë atëherë do të pranojë një raport."
 
-#: perllib/FixMyStreet/Script/Reports.pm:201
+#: perllib/FixMyStreet/Script/Reports.pm:199
 msgid "This email has been sent to both councils covering the location of the problem, as the user did not categorise it; please ignore it if you're not the correct council to deal with the issue, or let us know what category of problem this is so we can add it to our system."
 msgstr "Ky email është dërguar të dy Drejtorite që mbulojnë vendndodhjen e problemit, pasi përdoruesi nuk e kategorizoj atë; ju lutemi të injoroni atë në qoftë se ju nuk jeni Drejtoria e duhur për t'u marrë me këtë çështje, ose na tregoni se çfarë kategorie e problemit është kjo kështu që ne mund të shtojmë atë në sistemin tonë."
 
-#: perllib/FixMyStreet/Script/Reports.pm:204
+#: perllib/FixMyStreet/Script/Reports.pm:202
 msgid "This email has been sent to several councils covering the location of the problem, as the category selected is provided for all of them; please ignore it if you're not the correct council to deal with the issue."
 msgstr "Ky email është dërguar në disa Drejtori që mbulojnë vendndodhjen e problemit, pasi që kategoria e zgjedhur është dhënë për të gjithë ata; ju lutemi ta injoroni atë në qoftë se ju nuk jeni Drejtoria e duhur për t'u marrë me këtë çështje."
 
-#: perllib/FixMyStreet/App/Controller/Report/New.pm:882
-#: perllib/FixMyStreet/App/Controller/Report/New.pm:926
-#: perllib/FixMyStreet/App/Controller/Report/New.pm:972
+#: perllib/FixMyStreet/App/Controller/Report/New.pm:881
+#: perllib/FixMyStreet/App/Controller/Report/New.pm:925
+#: perllib/FixMyStreet/App/Controller/Report/New.pm:971
 #: perllib/FixMyStreet/Cobrand/UK.pm:44
 msgid "This information is required"
 msgstr "Ky informacion është i nevojshëm"
@@ -3707,12 +3802,17 @@ msgstr "Kjo është një përmbledhje e të gjitha raporteve në këtë faqe."
 msgid "This pothole has been here for two months and…"
 msgstr "Kjo gropë ka qenë këtu për dy muaj dhe ..."
 
-#: templates/web/base/report/update/form_update.html:59
+#: templates/web/base/report/update/form_update.html:63
 msgid "This problem has been fixed"
 msgstr "Ky problem ka qene i rregulluar"
 
-#: templates/web/base/report/update/form_update.html:53
+#: templates/web/base/report/update/form_update.html:56
 msgid "This problem has not been fixed"
+msgstr "Ky problem nuk ka qene i rregulluar"
+
+#: templates/web/base/report/update/form_update.html:54
+#, fuzzy
+msgid "This problem is still ongoing"
 msgstr "Ky problem nuk ka qene i rregulluar"
 
 #: templates/web/base/report/duplicate-no-updates.html:3
@@ -3793,8 +3893,8 @@ msgstr "Për të parë një hartë të vendndodhjen e saktë të kësaj çështj
 msgid "Total"
 msgstr "Total"
 
-#: templates/web/base/report/_inspect.html:107
-#: templates/web/base/report/_item.html:94
+#: templates/web/base/report/_inspect.html:119
+#: templates/web/base/report/_item.html:102
 msgid "Traffic management required?"
 msgstr "Menaxhimi i trafikut i nevojshëm?"
 
@@ -3802,7 +3902,7 @@ msgstr "Menaxhimi i trafikut i nevojshëm?"
 msgid "Trusted by bodies:"
 msgstr "Të besuar nga Drejtoritë:"
 
-#: perllib/FixMyStreet/Cobrand/Default.pm:722
+#: perllib/FixMyStreet/Cobrand/Default.pm:721
 msgid "Trusted to make reports that don't need to be inspected"
 msgstr "I besuar për të bërë raporte të cilat nuk duhet të kontrollhen"
 
@@ -3827,7 +3927,7 @@ msgstr "Provoni për të na shkruar email direkt:"
 msgid "Unconfirmed"
 msgstr "E pakonfirmuar"
 
-#: templates/web/base/reports/_list-filters.html:3
+#: templates/web/base/reports/_list-filters.html:7
 msgid "Unfixed reports"
 msgstr "Raportime të pa zgjidhura"
 
@@ -3850,6 +3950,11 @@ msgstr "Gabim i panjohur"
 #: perllib/FixMyStreet/App/Controller/Report.pm:124
 msgid "Unknown problem ID"
 msgstr "ID problemi i panjohur"
+
+#: templates/web/base/reports/_list-filters.html:5
+#, fuzzy
+msgid "Unshortlisted"
+msgstr "Përzgjedhur"
 
 #: templates/web/base/report/_item.html:24
 msgid "Up one"
@@ -3908,8 +4013,8 @@ msgid "Updated"
 msgstr "Perditesuar"
 
 #: perllib/FixMyStreet/App/Controller/Admin.pm:1161
-#: perllib/FixMyStreet/App/Controller/Admin.pm:1223
-#: perllib/FixMyStreet/App/Controller/Admin.pm:1376
+#: perllib/FixMyStreet/App/Controller/Admin.pm:1225
+#: perllib/FixMyStreet/App/Controller/Admin.pm:1380
 #: perllib/FixMyStreet/App/Controller/Admin.pm:824
 #: perllib/FixMyStreet/Cobrand/Zurich.pm:762
 #: perllib/FixMyStreet/Cobrand/Zurich.pm:787
@@ -3954,11 +4059,11 @@ msgstr "Harta të përdorura"
 msgid "User ID to attribute fetched comments to"
 msgstr ""
 
-#: perllib/FixMyStreet/App/Controller/Admin.pm:1683
+#: perllib/FixMyStreet/App/Controller/Admin.pm:1696
 msgid "User flag removed"
 msgstr "Flamuri i përdoruesit është hequr"
 
-#: perllib/FixMyStreet/App/Controller/Admin.pm:1655
+#: perllib/FixMyStreet/App/Controller/Admin.pm:1668
 msgid "User flagged"
 msgstr ""
 
@@ -3966,14 +4071,14 @@ msgstr ""
 msgid "User search finds matches in users' names and email addresses."
 msgstr "Përdoruesi gjen përputhje në kërkimet e emrit të përdoruesit dhe email adresës."
 
-#: perllib/FixMyStreet/Cobrand/Default.pm:670
-#: perllib/FixMyStreet/Cobrand/Default.pm:724
+#: perllib/FixMyStreet/Cobrand/Default.pm:669
+#: perllib/FixMyStreet/Cobrand/Default.pm:723
 #: perllib/FixMyStreet/Cobrand/Zurich.pm:398
 #: templates/web/base/admin/flagged.html:29 templates/web/zurich/header.html:61
 msgid "Users"
 msgstr "Perdoruesit"
 
-#: templates/web/base/admin/user-form.html:149
+#: templates/web/base/admin/user-form.html:141
 msgid "Users can perform the following actions within their assigned body or area."
 msgstr "Përdoruesit mund të ndërmarrin hapat brenda drejtorisë apo fushës së tyre të dedikuar."
 
@@ -4023,7 +4128,7 @@ msgstr "Ne kemi gjetur më shumë se një përputhje për referencën e problemi
 msgid "We need your email address, please give it below."
 msgstr "Na nevojitet email adresa juaj, ju lutemi shkruajeni më poshtë"
 
-#: perllib/FixMyStreet/Script/Reports.pm:210
+#: perllib/FixMyStreet/Script/Reports.pm:208
 msgid "We realise this problem might be the responsibility of %s; however, we don't currently have any contact details for them. If you know of an appropriate contact address, please do get in touch."
 msgstr "Ne kuptojmë që ky problem mund të jetë përgjegjësi e  pavarësisht ne nuk kemi ndonjë detaj kontaktues për ta. Por nese ju dini ndonjë kontakt adresë të përshtatshme, ju lutem kontaktoni."
 
@@ -4057,7 +4162,7 @@ msgstr "Kur redaktohet"
 msgid "When sent"
 msgstr "Kur është dërguar"
 
-#: templates/web/base/report/_inspect.html:72
+#: templates/web/base/report/_inspect.html:84
 msgid "Which report is it a duplicate of?"
 msgstr ""
 
@@ -4100,6 +4205,7 @@ msgstr "Lokacion i gabuar? Vetëm klikoni përsëri në hartë."
 msgid "Year"
 msgstr "Viti"
 
+#: perllib/FixMyStreet/Cobrand/Default.pm:1202
 #: templates/web/base/admin/bodies.html:70
 #: templates/web/base/admin/body.html:86 templates/web/base/admin/body.html:88
 #: templates/web/base/admin/body.html:92 templates/web/base/admin/body.html:94
@@ -4229,7 +4335,7 @@ msgid "Your Reports"
 msgstr "Raportet tuaja"
 
 #: templates/web/base/auth/change_password.html:11
-#: templates/web/base/footer.html:26 templates/web/base/my/my.html:18
+#: templates/web/base/main_nav_items.html:4 templates/web/base/my/my.html:18
 msgid "Your account"
 msgstr "Llogaria juaj"
 
@@ -4305,7 +4411,7 @@ msgid "Yourself"
 msgstr "Vetëvetja"
 
 #: templates/web/base/admin/category-checkboxes.html:7
-#: templates/web/base/admin/user-form.html:159
+#: templates/web/base/admin/user-form.html:151
 msgid "all"
 msgstr "Të gjitha"
 
@@ -4313,7 +4419,7 @@ msgstr "Të gjitha"
 msgid "by %s"
 msgstr "nga %s"
 
-#: perllib/FixMyStreet/DB/Result/Comment.pm:288
+#: perllib/FixMyStreet/DB/Result/Comment.pm:290
 msgid "closed as a duplicate report"
 msgstr "shenuar si raport i dyfishuar"
 
@@ -4341,49 +4447,59 @@ msgstr "Ndryshoni përdoruesin"
 msgid "from %s different users"
 msgstr "nga %s perdorues te ndryshem"
 
-#: templates/web/base/report/_item.html:54
+#: templates/web/base/report/_item.html:59
+#, fuzzy
+msgid "last updated %d day ago"
+msgstr "Perditesimi i fundit %s"
+
+#: templates/web/base/report/_item.html:59
+#, fuzzy
+msgid "last updated %d days ago"
+msgstr "Perditesimi i fundit %s"
+
+#: templates/web/base/report/_item.html:61
 #: templates/web/zurich/report/_item.html:14
 msgid "last updated %s"
 msgstr "Perditesimi i fundit %s"
 
-#: perllib/Utils.pm:206
+#: perllib/Utils.pm:227
 msgid "less than a minute"
 msgstr "më pak se një minutë"
 
-#: perllib/FixMyStreet/DB/Result/Comment.pm:278
+#: perllib/FixMyStreet/DB/Result/Comment.pm:280
 msgid "marked as action scheduled"
 msgstr "shenuar si veprim i planifikuar"
 
-#: perllib/FixMyStreet/DB/Result/Comment.pm:290
+#: perllib/FixMyStreet/DB/Result/Comment.pm:292
 msgid "marked as an internal referral"
 msgstr "shenuar si nje rekomandim i brendshem"
 
-#: perllib/FixMyStreet/DB/Result/Comment.pm:280
+#: perllib/FixMyStreet/DB/Result/Comment.pm:282
 msgid "marked as closed"
 msgstr "shenuar si i mbyllur"
 
-#: perllib/FixMyStreet/DB/Result/Comment.pm:261
-#: perllib/FixMyStreet/DB/Result/Comment.pm:282
+#: perllib/FixMyStreet/DB/Result/Comment.pm:263
+#: perllib/FixMyStreet/DB/Result/Comment.pm:284
 msgid "marked as fixed"
 msgstr "shenuar si i rregulluar"
 
-#: perllib/FixMyStreet/DB/Result/Comment.pm:276
+#: perllib/FixMyStreet/DB/Result/Comment.pm:278
 msgid "marked as in progress"
 msgstr "shenuar si ne progres"
 
-#: perllib/FixMyStreet/DB/Result/Comment.pm:272
+#: perllib/FixMyStreet/DB/Result/Comment.pm:274
 msgid "marked as investigating"
 msgstr "shenuar si i shqyrtuar"
 
-#: perllib/FixMyStreet/DB/Result/Comment.pm:284
+#: perllib/FixMyStreet/DB/Result/Comment.pm:286
 msgid "marked as no further action"
 msgstr "Etiketuar si e pamundur për ta rregulluar"
 
-#: perllib/FixMyStreet/DB/Result/Comment.pm:286
+#: perllib/FixMyStreet/DB/Result/Comment.pm:288
 msgid "marked as not the council's responsibility"
 msgstr ""
 
-#: perllib/FixMyStreet/DB/Result/Comment.pm:274
+#: perllib/FixMyStreet/DB/Result/Comment.pm:276
 msgid "marked as planned"
 msgstr "shenuar si i planifikuar"
 
@@ -4394,7 +4510,7 @@ msgid "n/a"
 msgstr "n/a"
 
 #: templates/web/base/admin/category-checkboxes.html:8
-#: templates/web/base/admin/user-form.html:160
+#: templates/web/base/admin/user-form.html:152
 msgid "none"
 msgstr "asnjë"
 
@@ -4429,8 +4545,8 @@ msgstr "E dhënë origjinale"
 msgid "other areas:"
 msgstr "zona tjera:"
 
-#: perllib/FixMyStreet/DB/Result/Comment.pm:263
-#: perllib/FixMyStreet/DB/Result/Comment.pm:269
+#: perllib/FixMyStreet/DB/Result/Comment.pm:265
+#: perllib/FixMyStreet/DB/Result/Comment.pm:271
 msgid "reopened"
 msgstr "rihapur"
 
@@ -4451,7 +4567,7 @@ msgstr "lokal council"
 msgid "there is no pin shown as the user did not use the map"
 msgstr ""
 
-#: perllib/FixMyStreet/Script/Reports.pm:186
+#: perllib/FixMyStreet/Script/Reports.pm:184
 msgid "this type of local problem"
 msgstr "ky lloj i problemit lokal"
 
@@ -4476,24 +4592,31 @@ msgstr "perdoruesi eshte shkaktar i problemit"
 msgid "ward"
 msgstr "lagje"
 
-#: perllib/Utils.pm:223
+#: perllib/Utils.pm:250
 #, perl-format
 msgid "%d day"
 msgid_plural "%d days"
 msgstr[0] "%d ditë"
 msgstr[1] "%d dit"
 
-#: perllib/Utils.pm:225
+#: perllib/Utils.pm:252
 #, perl-format
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "%d orë"
 msgstr[1] "%d orë"
 
-#: perllib/Utils.pm:227
+#: perllib/Utils.pm:254
 #, perl-format
 msgid "%d minute"
 msgid_plural "%d minutes"
+msgstr[0] "%d minutë"
+msgstr[1] "%d minuta"
+
+#: perllib/Utils.pm:246
+#, fuzzy, perl-format
+msgid "%d month"
+msgid_plural "%d months"
 msgstr[0] "%d minutë"
 msgstr[1] "%d minuta"
 
@@ -4504,12 +4627,19 @@ msgid_plural "%d supporters"
 msgstr[0] "%d perkrahes"
 msgstr[1] "%d perkrahes"
 
-#: perllib/Utils.pm:221
+#: perllib/Utils.pm:248
 #, perl-format
 msgid "%d week"
 msgid_plural "%d weeks"
 msgstr[0] "%d javë"
 msgstr[1] "%d javë"
+
+#: perllib/Utils.pm:244
+#, perl-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] ""
+msgstr[1] ""
 
 #: templates/web/base/front/stats.html:19
 #, perl-format
@@ -4552,6 +4682,12 @@ msgid "We do not yet have details for the council that covers this location."
 msgid_plural "We do not yet have details for the councils that cover this location."
 msgstr[0] ""
 msgstr[1] ""
+
+#~ msgid "Reports from users with high enough reputation will be sent immediately without requiring inspection. Each category's threshold can be managed on its edit page. Users earn reputation when a report they have made is marked as inspected by inspectors."
+#~ msgstr "Raportet nga përdoruesit me reputacion të lartë dhe të mjaftueshëm do të dërgohen menjëherë pa kërkuar inspektimin e mëtutjeshëm. Pragu i çdo kategorie mund të menaxhohet në faqen e saj të redaktimit. Përdoruesit fitojnë reputacion kur një raport që kanë bërë është shënuar si i kontrolluar nga inspektorët."
+
+#~ msgid "Reputation:"
+#~ msgstr "Reputacioni:"
 
 #~ msgid "Cancel"
 #~ msgstr "Anulo"
