@@ -3767,7 +3767,7 @@ msgstr "Estos serán publicados online para que otros los vean: de acuerdo con n
 #: templates/web/base/report/new/councils_text_all.html:4
 #: templates/web/base/report/new/councils_text_all.html:6
 msgid "These will be sent to <strong>%s</strong> and also published online for others to see, in accordance with our <a href=\"%s\">privacy policy</a>."
-msgstr "Estos serán enviados a <strong>%s</strong> y también publicados online para que otros los vean, de acuerdo a nuestra <a href=\"%s\">política de privacidad</a>."
+msgstr "Estos serán enviados al <strong>%s</strong> y también publicados online para que otros los vean, de acuerdo a nuestra <a href=\"%s\">política de privacidad</a>."
 
 #: templates/web/base/report/new/councils_text_private.html:5
 #: templates/web/base/report/new/form_user.html:4
