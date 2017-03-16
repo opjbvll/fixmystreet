@@ -2644,9 +2644,8 @@ msgid "Private"
 msgstr "Privado"
 
 #: templates/web/base/report/new/form_user.html:1
-#, fuzzy
 msgid "Private details"
-msgstr "Detalles adicionales"
+msgstr "Detalles privado"
 
 #: templates/web/base/maps/pin.html:13
 msgid "Problem"
@@ -2742,9 +2741,8 @@ msgid "Providing a password is optional, but doing so will allow you to more eas
 msgstr "Proporcionar una contraseña es opcional, pero hacerlo le permitirá notificar y actualizar los problemas más fácilmente, así como administrar sus informes."
 
 #: templates/web/base/report/new/form_report.html:10
-#, fuzzy
 msgid "Public details"
-msgstr "Actualización pública:"
+msgstr "Detalles públicos"
 
 #: templates/web/zurich/admin/report_edit.html:241
 #: templates/web/zurich/admin/report_edit.html:268
