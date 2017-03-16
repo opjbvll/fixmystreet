@@ -492,7 +492,7 @@ msgstr "Por Fecha"
 
 #: templates/web/base/auth/token.html:21 templates/web/base/email_sent.html:18
 msgid "Can&rsquo;t find our email? Check your spam folder&nbsp;&ndash; that&rsquo;s the solution 99% of the time."
-msgstr "¿No puede&rsquo;t encontrar nuestro email? Busque en su folder de email basura&nbsp;&ndash; esa&rsquo;s la solución 99% del tiempo."
+msgstr "¿No puedes encontrar nuestro email? Busque en su folder de email basura&nbsp;&ndash; esa es la solución 99% del tiempo."
 
 #: templates/web/base/around/_report_banner.html:5
 msgid "Can't see the map? <em>Skip this step</em>"
@@ -609,12 +609,12 @@ msgstr ""
 
 #: templates/web/base/report/_inspect.html:76
 msgid "Choose another"
-msgstr ""
+msgstr "Elija otro"
 
 #: templates/web/base/admin/stats.html:72
 #: templates/web/base/admin/stats.html:78
 msgid "Click here or enter as dd/mm/yyyy"
-msgstr "Haga click aqui o introduzca dd/mm/yyyy"
+msgstr "Haga clic aqui o introduzca dd/mm/yyyy"
 
 #: templates/web/base/around/_report_banner.html:2
 msgid "Click map to report a problem"
@@ -622,19 +622,19 @@ msgstr "Haga clic en el mapa para notificar un problema"
 
 #: templates/web/base/email_sent.html:13
 msgid "Click the link in our confirmation email to activate your alert."
-msgstr "Haga un click en nuestro email de confirmación para activar su alerta."
+msgstr "Haga un clic en nuestro email de confirmación para activar su alerta."
 
 #: templates/web/base/email_sent.html:9
 msgid "Click the link in our confirmation email to publish your problem."
-msgstr "Haga un click en nuestro email de confirmación para publicar su problema."
+msgstr "Haga un clic en nuestro email de confirmación para publicar su problema."
 
 #: templates/web/base/email_sent.html:11
 msgid "Click the link in our confirmation email to publish your update."
-msgstr "Haga un click en nuestro email de confirmación para publicar su actualización."
+msgstr "Haga un clic en nuestro email de confirmación para publicar su actualización."
 
 #: templates/web/base/auth/token.html:18
 msgid "Click the link in our confirmation email to sign in."
-msgstr "Haga un click en nuestro email de confirmación para iniciar sesión."
+msgstr "Haga un clic en nuestro email de confirmación para iniciar sesión."
 
 #: perllib/FixMyStreet/Cobrand/Zurich.pm:189
 #: perllib/FixMyStreet/Cobrand/Zurich.pm:960
@@ -917,7 +917,7 @@ msgstr ""
 
 #: templates/web/base/js/translation_strings.html:52
 msgid "Drag and drop photos here or <u>click to upload</u>"
-msgstr "Deslice y deje las fotos aquí o <u>haga click para subir</u>"
+msgstr "Deslice y deje las fotos aquí o <u>haga clic para subir</u>"
 
 #: templates/web/base/admin/report_blocks.html:1
 #: templates/web/base/admin/report_blocks.html:16
